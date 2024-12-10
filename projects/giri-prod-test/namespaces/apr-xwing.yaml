@@ -1,0 +1,22 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Namespace
+metadata:
+  annotations:
+    rafay.dev/description: xwing
+  description: xwing
+  labels:
+    apr: xwing
+    dsds: ""
+  name: apr-xwing
+  project: giri-prod-test
+spec:
+  limitRange:
+    container: {}
+    pod: {}
+  namespaceMeshPolicyParams: {}
+  networkPolicyParams: {}
+  placement:
+    labels:
+    - key: rafay.dev/clusterName
+      value: giri-apr6-prod
+  resourceQuotas: {}

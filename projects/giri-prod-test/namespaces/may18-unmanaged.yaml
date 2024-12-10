@@ -1,0 +1,8 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Namespace
+metadata:
+  labels:
+    kubernetes.io/metadata.name: may18-unmanaged
+  name: may18-unmanaged
+  project: giri-prod-test
+spec: {}

@@ -1,0 +1,21 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Namespace
+metadata:
+  annotations:
+    rafay.dev/description: ""
+  name: nov20-redis
+  project: giri-prod-test
+spec:
+  limitRange:
+    container: {}
+    pod: {}
+  namespaceMeshPolicyParams: {}
+  placement:
+    labels:
+    - key: rafay.dev/clusterName
+      value: giri-eks-nov21
+    - key: rafay.dev/clusterName
+      value: giri-prod-nov21
+    - key: rafay.dev/clusterName
+      value: k3d-import-aws-east-1
+  resourceQuotas: {}

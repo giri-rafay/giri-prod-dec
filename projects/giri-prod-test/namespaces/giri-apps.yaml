@@ -1,0 +1,19 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Namespace
+metadata:
+  name: giri-apps
+  project: giri-prod-test
+spec:
+  limitRange:
+    container: {}
+    pod: {}
+  namespaceMeshPolicyParams: {}
+  placement:
+    labels:
+    - key: rafay.dev/clusterName
+      value: giri-eks-prod
+    - key: rafay.dev/clusterName
+      value: giri-prod
+    - key: rafay.dev/clusterName
+      value: giri-prod-post-rollout
+  resourceQuotas: {}
