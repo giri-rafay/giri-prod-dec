@@ -5,4 +5,13 @@ metadata:
     rafay.dev/description: ""
   name: dec11
   project: giri-prod-test
-spec: {}
+spec:
+  limitRange:
+    container: {}
+    pod: {}
+  namespaceMeshPolicyParams: {}
+  placement:
+    labels:
+    - key: rafay.dev/clusterName
+      value: giri-dec10
+  resourceQuotas: {}
